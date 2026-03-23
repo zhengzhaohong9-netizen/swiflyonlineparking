@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | Swiftly</title>
+  <meta name="description" content="Search mock Swiftly parking listings across Honolulu neighborhoods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="locations">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>Swiftly</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="locations.html" class="active">Locations</a>
+        <a href="listings.html">Listings</a>
+        <a href="host.html">Become a Host</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Search parking</span>
+        <h1>Find parking by Honolulu neighborhood or destination</h1>
+        <p>Use this mock search interface to explore how Swiftly could help drivers compare and reserve local parking options.</p>
+      </div>
+    </section>
+
+    <!-- Search page image section -->
+    <section class="section section-image-strip image-strip-tight">
+      <div class="container image-feature-shell image-feature-reverse surface-card">
+        <div class="image-frame">
+          <img src="assets/parking-search.svg" alt="Illustration of parking search and reserved parking spaces">
+        </div>
+        <div class="image-feature-copy">
+          <span class="eyebrow">Visual search experience</span>
+          <h2>Parking discovery made easier to understand</h2>
+          <p>
+            This image helps the search page feel more complete by visually reinforcing reserved spaces,
+            search filters, and organized parking choices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="surface-card search-shell">
+          <form class="search-form" data-search-form>
+            <div class="form-field">
+              <label for="search-location">Neighborhood or destination</label>
+              <input id="search-location" name="location" type="text" placeholder="Search Waikiki, Ala Moana, Downtown..." />
+            </div>
+            <div class="form-field">
+              <label for="search-type">Rate type</label>
+              <select id="search-type" name="type">
+                <option value="all">All options</option>
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+                <option value="monthly">Monthly</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="search-availability">Availability</label>
+              <select id="search-availability" name="availability">
+                <option value="all">Any status</option>
+                <option value="Available now">Available now</option>
+                <option value="Limited">Limited</option>
+                <option value="Weekday access">Weekday access</option>
+              </select>
+            </div>
+            <button class="button button-primary" type="submit">Search</button>
+          </form>
+
+          <div class="suggested-tags">
+            <span>Suggested:</span>
+            <button type="button" class="tag-button" data-tag="Waikiki">Waikiki</button>
+            <button type="button" class="tag-button" data-tag="Ala Moana">Ala Moana</button>
+            <button type="button" class="tag-button" data-tag="Downtown Honolulu">Downtown Honolulu</button>
+            <button type="button" class="tag-button" data-tag="University of Hawaii at Manoa">University of Hawaii at Manoa</button>
+            <button type="button" class="tag-button" data-tag="Kakaako">Kakaako</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <span class="eyebrow">Sample search results</span>
+            <h2>Mock listings in Honolulu</h2>
+          </div>
+          <p id="results-count">Showing 0 listings</p>
+        </div>
+        <div class="listing-grid" data-listing-grid="locations"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark">S</span>
+          <span>Swiftly</span>
+        </a>
+        <p>Parking made easier across Honolulu.</p>
+      </div>
+      <div>
+        <h3>Neighborhoods</h3>
+        <a href="locations.html">Waikiki</a>
+        <a href="locations.html">Ala Moana</a>
+        <a href="locations.html">Kakaako</a>
+      </div>
+      <div>
+        <h3>More</h3>
+        <a href="listings.html">Pricing & Listings</a>
+        <a href="host.html">Host a Space</a>
+        <a href="contact.html">Help Center</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

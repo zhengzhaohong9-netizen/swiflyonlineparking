@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiftly | Find parking fast. Share parking smart.</title>
+  <meta
+    name="description"
+    content="Swiftly is a peer-to-peer parking marketplace in Honolulu that helps drivers book private parking spaces and hosts earn from unused stalls."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>Swiftly</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="locations.html">Locations</a>
+        <a href="listings.html">Listings</a>
+        <a href="host.html">Become a Host</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Peer-to-peer parking marketplace in Honolulu</span>
+          <h1>Find parking fast. Share parking smart.</h1>
+          <p class="hero-text">
+            Swiftly connects drivers who need convenient parking with hosts who have
+            unused private spaces, from condo stalls and apartment lots to business parking.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="locations.html">Find Parking</a>
+            <a class="button button-secondary" href="host.html">Become a Host</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>5 Honolulu zones</strong>
+              <span>Sample neighborhoods ready to browse</span>
+            </div>
+            <div class="stat-card">
+              <strong>Flexible pricing</strong>
+              <span>Hourly, daily, and monthly options</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel surface-card">
+          <div class="panel-header">
+            <div>
+              <p class="mini-label">Live parking preview</p>
+              <h2>Book in minutes</h2>
+            </div>
+            <span class="status-pill">Secure checkout</span>
+          </div>
+          <div class="search-preview">
+            <div class="search-row">
+              <span class="search-label">Destination</span>
+              <strong>Waikiki</strong>
+            </div>
+            <div class="search-row">
+              <span class="search-label">Arrival</span>
+              <strong>Today, 6:00 PM</strong>
+            </div>
+            <div class="search-row">
+              <span class="search-label">Duration</span>
+              <strong>3 hours</strong>
+            </div>
+          </div>
+          <div class="listing-preview">
+            <div>
+              <p class="mini-label">Featured space</p>
+              <h3>Covered Condo Parking in Waikiki</h3>
+              <p>Reserved stall with evening access, short walk to Kalakaua Avenue.</p>
+            </div>
+            <div class="price-lockup">
+              <strong>$4/hr</strong>
+              <span>Available now</span>
+            </div>
+          </div>
+          <a class="button button-primary button-block" href="locations.html">View Sample Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home image showcase -->
+    <section class="section section-image-strip">
+      <div class="container image-feature-shell surface-card">
+        <div class="image-feature-copy">
+          <span class="eyebrow">Parking in motion</span>
+          <h2>See the Swiftly experience at a glance</h2>
+          <p>
+            We added a parking-themed visual to make the landing page feel more like a real startup product,
+            while still keeping the design clean, professional, and student-project friendly.
+          </p>
+        </div>
+        <div class="image-frame image-frame-large">
+          <img src="assets/parking-home.svg" alt="Illustration of a modern parking lot with multiple cars and reserved spaces">
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently posted listings section -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <span class="eyebrow">Recently Posted by Hosts</span>
+            <h2>Fresh parking listings from local hosts</h2>
+            <p>These sample posts make Swiftly feel like an active marketplace with real supply already live.</p>
+          </div>
+          <a class="button button-secondary" href="listings.html">See All Listings</a>
+        </div>
+        <div class="listing-grid home-listing-grid" data-listing-grid="home"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Business overview</span>
+          <h2>A smarter way to match parking demand with unused space</h2>
+          <p>
+            Swiftly is an e-business platform that helps Honolulu drivers reserve private parking
+            online while enabling hosts to turn empty stalls into income.
+          </p>
+        </div>
+        <div class="grid three-up">
+          <article class="feature-card surface-card">
+            <span class="feature-icon">01</span>
+            <h3>Convenient booking</h3>
+            <p>Search by neighborhood or destination and lock in a spot before you arrive.</p>
+          </article>
+          <article class="feature-card surface-card">
+            <span class="feature-icon">02</span>
+            <h3>Affordable parking options</h3>
+            <p>Compare hourly, daily, and monthly prices to find parking that fits your budget.</p>
+          </article>
+          <article class="feature-card surface-card">
+            <span class="feature-icon">03</span>
+            <h3>Flexible host income</h3>
+            <p>Apartment owners, condo residents, and businesses can monetize extra stalls.</p>
+          </article>
+          <article class="feature-card surface-card">
+            <span class="feature-icon">04</span>
+            <h3>Secure and easy to use</h3>
+            <p>Simple booking flows, trusted listings, and a platform designed for everyday use.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">How it works</span>
+          <h2>Search. Book. Park.</h2>
+          <p>Swiftly keeps the experience easy for both drivers and parking-space hosts.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Search</h3>
+            <p>Browse parking by area, compare prices, and view availability near your destination.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Book</h3>
+            <p>Reserve a space in advance with a fast booking flow that reduces parking stress.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Park</h3>
+            <p>Arrive confidently, follow the host instructions, and use your reserved stall.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div>
+          <span class="eyebrow">Marketplace value</span>
+          <h2>Designed for busy drivers and space owners</h2>
+          <p>
+            Honolulu parking can be limited, expensive, and difficult to find. Swiftly solves that
+            problem by making underused private parking visible, bookable, and profitable.
+          </p>
+          <ul class="check-list">
+            <li>Save time and reduce parking stress</li>
+            <li>Give hosts an additional source of passive income</li>
+            <li>Support a platform-based, transaction-driven marketplace model</li>
+            <li>Create a scalable foundation for future payment and booking integrations</li>
+          </ul>
+        </div>
+        <div class="surface-card quote-card">
+          <p class="mini-label">Why it matters</p>
+          <blockquote>
+            Swiftly acts as an intermediary between supply and demand, helping people in Honolulu
+            book parking more easily online while unlocking value from unused private spaces.
+          </blockquote>
+          <a class="text-link" href="about.html">Read the full business concept</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">More Swiftly Pages</span>
+          <h2>Explore the expanded 12-page website</h2>
+          <p>These extra pages make the project feel more complete, with views for drivers, booking, neighborhoods, host tools, and safety.</p>
+        </div>
+        <div class="page-link-grid">
+          <a class="surface-card page-link-card" href="drivers.html"><h3>For Drivers</h3><p>Driver-specific benefits and use cases.</p></a>
+          <a class="surface-card page-link-card" href="neighborhoods.html"><h3>Neighborhoods</h3><p>Demand areas across Honolulu.</p></a>
+          <a class="surface-card page-link-card" href="booking.html"><h3>Booking Flow</h3><p>Mock reservation details and summary.</p></a>
+          <a class="surface-card page-link-card" href="host-dashboard.html"><h3>Host Dashboard</h3><p>Preview a host management experience.</p></a>
+          <a class="surface-card page-link-card" href="safety.html"><h3>Safety & Trust</h3><p>Platform standards and confidence-building details.</p></a>
+        </div>
+      </div>
+    </section>    <section class="section cta-band">
+      <div class="container cta-shell">
+        <div>
+          <span class="eyebrow">Start exploring</span>
+          <h2>Build parking convenience into your day</h2>
+          <p>Browse mock listings, compare rates, and see how Swiftly could work as a real startup.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" href="listings.html">Browse Listings</a>
+          <a class="button button-secondary" href="contact.html">Contact Swiftly</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark">S</span>
+          <span>Swiftly</span>
+        </a>
+        <p>Peer-to-peer parking marketplace MVP for Honolulu, Hawaii.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="locations.html">Locations</a>
+        <a href="listings.html">Listings</a>
+      </div>
+      <div>
+        <h3>Business</h3>
+        <a href="host.html">Become a Host</a>
+        <a href="about.html">About Swiftly</a>
+        <a href="contact.html">Contact & Help</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

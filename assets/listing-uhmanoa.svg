@@ -1,0 +1,63 @@
+﻿<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="noise3" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.05"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="top3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5edf3"/>
+      <stop offset="100%" stop-color="#c0ceda"/>
+    </linearGradient>
+    <linearGradient id="floor3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4e5d6d"/>
+      <stop offset="100%" stop-color="#212c36"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="820" fill="url(#top3)"/>
+  <rect y="0" width="1200" height="262" fill="#e7e0d7"/>
+  <rect y="262" width="1200" height="164" fill="#f3eee6"/>
+  <rect y="426" width="1200" height="394" fill="url(#floor3)"/>
+  <rect x="132" y="246" width="44" height="574" fill="#71767b"/>
+  <rect x="454" y="246" width="44" height="574" fill="#71767b"/>
+  <rect x="776" y="246" width="44" height="574" fill="#71767b"/>
+  <rect x="1040" y="246" width="44" height="574" fill="#71767b"/>
+  <rect x="150" y="131" width="451" height="89" rx="7" fill="#1b1b1b" opacity="0.96"/>
+  <text x="376" y="184" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#d6cfbe">University Parking</text>
+  <rect x="680" y="169" width="254" height="58" rx="7" fill="#1b1b1b" opacity="0.96"/>
+  <text x="807" y="204" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#d6cfbe">Monthly Access</text>
+  <g fill="#121212">
+    <circle cx="122" cy="90" r="14"/>
+    <circle cx="342" cy="90" r="14"/>
+    <circle cx="564" cy="90" r="14"/>
+    <circle cx="786" cy="90" r="14"/>
+    <circle cx="1008" cy="90" r="14"/>
+  </g>
+  <rect x="0" y="418" width="1200" height="20" fill="#394858"/>
+  <path d="M0 492H1200" stroke="#eef4f9" stroke-width="4" stroke-dasharray="23 20" opacity="0.42"/>
+  <g>
+    <rect x="250" y="388" width="127" height="79" rx="15" fill="#9fa7af"/>
+    <rect x="275" y="348" width="85" height="48" rx="11" fill="#d6e0e8"/>
+    <circle cx="279" cy="470" r="16" fill="#2d3946"/>
+    <circle cx="361" cy="470" r="16" fill="#2d3946"/>
+  </g>
+  <g>
+    <rect x="563" y="397" width="138" height="72" rx="14" fill="#ccd5de"/>
+    <rect x="586" y="360" width="95" height="45" rx="11" fill="#ecf2f7"/>
+    <circle cx="585" cy="471" r="16" fill="#34414d"/>
+    <circle cx="679" cy="471" r="16" fill="#34414d"/>
+  </g>
+  <g>
+    <rect x="880" y="390" width="148" height="79" rx="15" fill="#12171c" opacity="0.94"/>
+    <rect x="906" y="349" width="100" height="51" rx="11" fill="#c8d3de"/>
+    <circle cx="902" cy="472" r="16" fill="#1f2933"/>
+    <circle cx="1001" cy="472" r="16" fill="#1f2933"/>
+  </g>
+  <path d="M116 692C232 636 333 611 458 606" stroke="#e0eaf2" stroke-width="8" stroke-linecap="round" opacity="0.48"/>
+  <path d="M613 744C742 686 876 665 1038 668" stroke="#e0eaf2" stroke-width="8" stroke-linecap="round" opacity="0.36"/>
+  <rect x="56" y="463" width="10" height="112" rx="5" fill="#cf7a22"/>
+  <rect x="67" y="463" width="6" height="112" rx="3" fill="#f7e3a6"/>
+  <rect x="1129" y="463" width="10" height="112" rx="5" fill="#cf7a22"/>
+  <rect x="1140" y="463" width="6" height="112" rx="3" fill="#f7e3a6"/>
+  <rect width="1200" height="820" filter="url(#noise3)" opacity="0.58"/>
+</svg>

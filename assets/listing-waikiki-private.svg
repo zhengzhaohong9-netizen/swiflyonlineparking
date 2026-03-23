@@ -1,0 +1,43 @@
+﻿<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wall1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8d5cf"/>
+      <stop offset="100%" stop-color="#f0ede7"/>
+    </linearGradient>
+    <linearGradient id="floor1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#151515"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="820" fill="#d4d7db"/>
+  <rect y="0" width="1200" height="250" fill="#5e5b59"/>
+  <rect y="100" width="1200" height="26" fill="#3f3c39"/>
+  <rect x="0" y="250" width="1200" height="570" fill="url(#wall1)"/>
+  <rect x="0" y="470" width="1200" height="350" fill="url(#floor1)"/>
+  <rect x="56" y="118" width="28" height="92" rx="4" fill="#8bc0dd" opacity="0.6"/>
+  <rect x="0" y="278" width="1200" height="14" fill="#b8b1a8"/>
+  <rect x="0" y="290" width="1200" height="14" fill="#a9a29a"/>
+  <rect x="0" y="304" width="1200" height="14" fill="#bbb4ac"/>
+  <rect x="0" y="318" width="1200" height="14" fill="#c9c1b8"/>
+  <rect x="0" y="332" width="1200" height="14" fill="#d7d0c8"/>
+  <rect x="875" y="88" width="52" height="104" rx="10" fill="#a7d0e8" opacity="0.35"/>
+  <rect x="122" y="506" width="6" height="252" fill="#d9d9d9" opacity="0.4"/>
+  <rect x="84" y="494" width="18" height="250" fill="#f2f2f2" opacity="0.3"/>
+  <rect x="507" y="370" width="10" height="110" fill="#2e2e2e"/>
+  <rect x="176" y="354" width="285" height="10" fill="#ece6de" opacity="0.8"/>
+  <text x="518" y="430" font-family="Arial, sans-serif" font-size="44" fill="#665f4f">65</text>
+  <rect x="560" y="410" width="118" height="36" rx="5" fill="#f2e54d"/>
+  <text x="619" y="435" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1f1f1f">CAUTION</text>
+  <rect x="0" y="470" width="1200" height="350" fill="url(#floor1)"/>
+  <path d="M389 520 L307 820 L984 820 L907 520 Z" fill="#1c1c1c" opacity="0.55"/>
+  <path d="M364 548 L332 820" stroke="#585858" stroke-width="6" opacity="0.6"/>
+  <text x="614" y="744" font-family="Arial, sans-serif" font-size="56" fill="#a9852e" text-anchor="middle" opacity="0.6">65</text>
+  <rect x="0" y="508" width="6" height="312" fill="#9e9e9e" opacity="0.45"/>
+  <g opacity="0.95">
+    <rect x="0" y="392" width="240" height="168" rx="16" fill="#f7f7f7"/>
+    <rect x="48" y="340" width="180" height="92" rx="20" fill="#ffffff"/>
+    <circle cx="52" cy="560" r="28" fill="#30343a"/>
+    <circle cx="208" cy="560" r="28" fill="#30343a"/>
+  </g>
+  <rect width="1200" height="820" fill="url(#floor1)" opacity="0.05"/>
+</svg>

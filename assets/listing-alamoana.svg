@@ -1,0 +1,63 @@
+﻿<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="noise2" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.05"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="top2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5eaef"/>
+      <stop offset="100%" stop-color="#c6d1db"/>
+    </linearGradient>
+    <linearGradient id="floor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#556474"/>
+      <stop offset="100%" stop-color="#24313c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="820" fill="url(#top2)"/>
+  <rect y="0" width="1200" height="292" fill="#e6e0d8"/>
+  <rect y="292" width="1200" height="156" fill="#f3eee7"/>
+  <rect y="448" width="1200" height="372" fill="url(#floor2)"/>
+  <rect x="171" y="247" width="42" height="573" fill="#73777d"/>
+  <rect x="523" y="247" width="42" height="573" fill="#73777d"/>
+  <rect x="875" y="247" width="42" height="573" fill="#73777d"/>
+  <rect x="118" y="148" width="268" height="87" rx="7" fill="#1b1b1b" opacity="0.96"/>
+  <text x="252" y="199" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="#d7cfbe">Ala Moana Parking</text>
+  <rect x="446" y="122" width="387" height="90" rx="7" fill="#1b1b1b" opacity="0.96"/>
+  <text x="639" y="176" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#d7cfbe">Secure Stall Entrance</text>
+  <rect x="866" y="176" width="164" height="56" rx="7" fill="#1b1b1b" opacity="0.96"/>
+  <text x="948" y="210" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#d7cfbe">Right Only</text>
+  <g fill="#121212">
+    <circle cx="112" cy="87" r="14"/>
+    <circle cx="401" cy="87" r="14"/>
+    <circle cx="689" cy="87" r="14"/>
+    <circle cx="979" cy="87" r="14"/>
+  </g>
+  <rect x="0" y="438" width="1200" height="20" fill="#3a4858"/>
+  <path d="M0 498H1200" stroke="#eef3f8" stroke-width="4" stroke-dasharray="23 20" opacity="0.42"/>
+  <g>
+    <rect x="230" y="392" width="131" height="77" rx="14" fill="#d6dde6"/>
+    <rect x="255" y="352" width="88" height="48" rx="11" fill="#eaf0f5"/>
+    <circle cx="259" cy="472" r="16" fill="#2d3946"/>
+    <circle cx="342" cy="472" r="16" fill="#2d3946"/>
+  </g>
+  <g>
+    <rect x="604" y="388" width="148" height="81" rx="15" fill="#12171c" opacity="0.94"/>
+    <rect x="630" y="346" width="100" height="51" rx="11" fill="#c5d0db"/>
+    <circle cx="627" cy="472" r="16" fill="#1e2933"/>
+    <circle cx="724" cy="472" r="16" fill="#1e2933"/>
+  </g>
+  <g>
+    <rect x="906" y="397" width="138" height="73" rx="14" fill="#cdd6df"/>
+    <rect x="929" y="359" width="95" height="46" rx="11" fill="#eef3f8"/>
+    <circle cx="927" cy="473" r="16" fill="#31404d"/>
+    <circle cx="1024" cy="473" r="16" fill="#31404d"/>
+  </g>
+  <path d="M73 658C191 612 314 591 459 591" stroke="#dce7ef" stroke-width="8" stroke-linecap="round" opacity="0.48"/>
+  <path d="M515 731C665 670 815 650 986 652" stroke="#dce7ef" stroke-width="8" stroke-linecap="round" opacity="0.38"/>
+  <rect x="55" y="472" width="10" height="112" rx="5" fill="#cf7a22"/>
+  <rect x="66" y="472" width="6" height="112" rx="3" fill="#f7e3a6"/>
+  <rect x="1118" y="471" width="10" height="112" rx="5" fill="#cf7a22"/>
+  <rect x="1129" y="471" width="6" height="112" rx="3" fill="#f7e3a6"/>
+  <rect width="1200" height="820" filter="url(#noise2)" opacity="0.58"/>
+</svg>
