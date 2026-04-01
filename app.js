@@ -302,7 +302,6 @@ function setupCheckout() {
   const quantityLabel = page.querySelector("[data-checkout-quantity-label]");
   const quantityHint = page.querySelector("[data-checkout-quantity-hint]");
   const form = page.querySelector("[data-checkout-form]");
-  const success = page.querySelector("[data-checkout-success]");
 
   const config = getCheckoutConfig(listing);
 
@@ -350,17 +349,43 @@ function setupCheckout() {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       updateSummary();
-      if (success) {
-        const finalSummary = getCheckoutSummary(listing, quantityInput ? quantityInput.value : config.defaultQuantity);
-        success.textContent = `Booking completed successfully for ${listing.title} (${finalSummary.quantityLabel}).`;
-      }
-      form.reset();
-      if (quantityInput) {
-        quantityInput.value = String(config.defaultQuantity);
-      }
-      updateSummary();
+
+      const emailInput = form.querySelector("#checkout-email");
+      const finalSummary = getCheckoutSummary(listing, quantityInput ? quantityInput.value : config.defaultQuantity);
+      const redirectParams = new URLSearchParams({
+        listing: listing.id,
+        email: emailInput ? emailInput.value.trim() : "",
+        quantity: String(finalSummary.quantityValue)
+      });
+
+      window.location.href = `booking-success.html?${redirectParams.toString()}`;
     });
   }
+}
+
+function setupBookingSuccess() {
+  const page = document.querySelector("[data-booking-success-page]");
+  if (!page) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const listing = getListingById(params.get("listing"));
+  const email = (params.get("email") || "your email").trim() || "your email";
+  const quantity = params.get("quantity");
+  const summary = getCheckoutSummary(listing, quantity);
+
+  const emailField = page.querySelector("[data-booking-success-email]");
+  const titleField = page.querySelector("[data-booking-success-title]");
+  const areaField = page.querySelector("[data-booking-success-area]");
+  const hostField = page.querySelector("[data-booking-success-host]");
+  const quantityField = page.querySelector("[data-booking-success-quantity]");
+  const totalField = page.querySelector("[data-booking-success-total]");
+
+  if (emailField) emailField.textContent = email;
+  if (titleField) titleField.textContent = listing.title;
+  if (areaField) areaField.textContent = listing.area;
+  if (hostField) hostField.textContent = listing.host;
+  if (quantityField) quantityField.textContent = summary.quantityLabel;
+  if (totalField) totalField.textContent = summary.total;
 }
 
 function setupFaq() {
@@ -383,8 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
   setupSearch();
   setupForms();
   setupCheckout();
+  setupBookingSuccess();
   setupFaq();
   renderListings(parkingListings.slice(0, 3), "home");
   renderListings(parkingListings, "listings");
 });
+
 

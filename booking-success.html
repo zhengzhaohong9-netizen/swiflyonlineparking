@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Complete | Swiftly</title>
+  <meta name="description" content="Booking confirmation for your Swiftly parking reservation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-booking-success-page>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span>Swiftly</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="locations.html">Locations</a>
+        <a href="listings.html">Listings</a>
+        <a href="host.html">Become a Host</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero success-page-hero">
+      <div class="container success-hero-copy">
+        <span class="eyebrow">Booking Complete</span>
+        <h1>Your reservation is confirmed</h1>
+        <p>Confirmation information will be sent to the email address you entered during checkout.</p>
+      </div>
+    </section>
+
+    <section class="section success-section">
+      <div class="container">
+        <div class="success-shell surface-card">
+          <div class="success-icon">✓</div>
+          <h2>Booking complete</h2>
+          <p class="success-email-line">Confirmation information will send to your email:</p>
+          <p class="success-email" data-booking-success-email>you@example.com</p>
+
+          <div class="success-summary-grid">
+            <div class="success-summary-item">
+              <span>Parking listing</span>
+              <strong data-booking-success-title>Covered Condo Parking in Waikiki</strong>
+            </div>
+            <div class="success-summary-item">
+              <span>Location</span>
+              <strong data-booking-success-area>Waikiki</strong>
+            </div>
+            <div class="success-summary-item">
+              <span>Host</span>
+              <strong data-booking-success-host>Hosted by Mia L.</strong>
+            </div>
+            <div class="success-summary-item">
+              <span>Reservation length</span>
+              <strong data-booking-success-quantity>3 hours</strong>
+            </div>
+            <div class="success-summary-item">
+              <span>Total paid</span>
+              <strong data-booking-success-total>$12.57</strong>
+            </div>
+          </div>
+
+          <div class="success-actions">
+            <a class="button button-primary" href="listings.html">Book Another Spot</a>
+            <a class="button button-secondary" href="index.html">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span><span>Swiftly</span></a>
+        <p>Fast, simple parking reservations across Honolulu.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="listings.html">Listings</a>
+        <a href="locations.html">Locations</a>
+        <a href="booking.html">Booking Flow</a>
+      </div>
+      <div>
+        <h3>Need help?</h3>
+        <a href="safety.html">Safety &amp; Trust</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
