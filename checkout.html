@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Swiftly</title>
+  <meta name="description" content="Complete a simulated parking booking checkout for Swiftly.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-checkout-page>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span>Swiftly</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="locations.html">Locations</a>
+        <a href="listings.html">Listings</a>
+        <a href="host.html">Become a Host</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero checkout-page-hero">
+      <div class="container checkout-hero-copy">
+        <span class="eyebrow">Checkout</span>
+        <h1>Complete your parking booking</h1>
+        <p>Review the reservation details, choose how long you want to park, and finish the simulated checkout flow.</p>
+      </div>
+    </section>
+
+    <section class="section checkout-section">
+      <div class="container">
+        <div class="checkout-shell surface-card">
+          <div class="checkout-form-panel">
+            <div class="checkout-steps">
+              <span class="checkout-step active">1. Details</span>
+              <span class="checkout-step active">2. Payment</span>
+              <span class="checkout-step">3. Confirmation</span>
+            </div>
+
+            <form class="checkout-form" data-checkout-form>
+              <div>
+                <p class="mini-label">Customer information</p>
+                <h2>Booking details</h2>
+              </div>
+
+              <div class="form-field">
+                <label for="checkout-email">Email address</label>
+                <input id="checkout-email" type="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="checkout-input-grid">
+                <div class="form-field">
+                  <label for="checkout-first-name">First name</label>
+                  <input id="checkout-first-name" type="text" placeholder="First name" required>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-last-name">Last name</label>
+                  <input id="checkout-last-name" type="text" placeholder="Last name" required>
+                </div>
+              </div>
+
+              <div class="checkout-input-grid">
+                <div class="form-field">
+                  <label for="checkout-phone">Phone number</label>
+                  <input id="checkout-phone" type="tel" placeholder="(808) 555-0123" required>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-plate">Vehicle plate number</label>
+                  <input id="checkout-plate" type="text" placeholder="ABC123" required>
+                </div>
+              </div>
+
+              <div class="checkout-input-grid checkout-input-grid-wide">
+                <div class="form-field">
+                  <label for="checkout-date">Date</label>
+                  <input id="checkout-date" type="date" required>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-start-time">Start time</label>
+                  <input id="checkout-start-time" type="time" required>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-end-time">End time</label>
+                  <input id="checkout-end-time" type="time" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="checkout-quantity" data-checkout-quantity-label>How many hours would you like to book?</label>
+                <input id="checkout-quantity" type="number" min="1" step="1" value="3" data-checkout-quantity required>
+                <p class="checkout-helper-text" data-checkout-quantity-hint>This listing is billed at $4.00/hour.</p>
+              </div>
+
+              <div class="form-field">
+                <label for="checkout-notes">Optional notes</label>
+                <textarea id="checkout-notes" rows="4" placeholder="Add any special arrival notes or questions."></textarea>
+              </div>
+
+              <div class="checkout-payment-block">
+                <div>
+                  <p class="mini-label">Mock payment</p>
+                  <h2>Payment details</h2>
+                </div>
+                <div class="form-field">
+                  <label for="checkout-card-number">Card number</label>
+                  <input id="checkout-card-number" type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+                </div>
+                <div class="checkout-input-grid checkout-input-grid-wide">
+                  <div class="form-field">
+                    <label for="checkout-expiration">Expiration date</label>
+                    <input id="checkout-expiration" type="text" placeholder="MM/YY" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="checkout-cvv">CVV</label>
+                    <input id="checkout-cvv" type="text" placeholder="123" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="checkout-card-name">Name on card</label>
+                    <input id="checkout-card-name" type="text" placeholder="Cardholder name" required>
+                  </div>
+                </div>
+              </div>
+
+              <button class="button button-primary button-block" type="submit">Complete Booking</button>
+              <p class="form-note" data-checkout-success></p>
+            </form>
+          </div>
+
+          <aside class="checkout-summary-panel">
+            <p class="mini-label">Order summary</p>
+            <div class="checkout-summary-card">
+              <div class="checkout-summary-media">
+                <img data-checkout-image src="parking%20picture/coverded%20condo%20parking%20in%20waikiki.jpg" alt="Parking listing thumbnail">
+              </div>
+              <div class="checkout-summary-content">
+                <h2 data-checkout-title>Covered Condo Parking in Waikiki</h2>
+                <p data-checkout-area>Waikiki</p>
+                <p data-checkout-host>Hosted by Mia L.</p>
+                <span class="listing-meta-chip" data-checkout-type>Hourly booking</span>
+                <p class="checkout-summary-note" data-checkout-booking-label>3 hours reserved at $4.00/hour</p>
+              </div>
+            </div>
+
+            <div class="checkout-pricing-list">
+              <div class="checkout-pricing-row"><span>Rate</span><strong data-checkout-rate>$4.00/hour</strong></div>
+              <div class="checkout-pricing-row"><span>Quantity</span><strong data-checkout-quantity-summary>3 hours</strong></div>
+              <div class="checkout-pricing-row"><span>Price</span><strong data-checkout-price>$12.00</strong></div>
+              <div class="checkout-pricing-row"><span>Tax (4.712%)</span><strong data-checkout-tax>$0.57</strong></div>
+              <div class="checkout-pricing-row checkout-pricing-total"><span>Total</span><strong data-checkout-total>$12.57</strong></div>
+            </div>
+
+            <p class="checkout-note-text" data-checkout-note>This is a simulated checkout page.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span><span>Swiftly</span></a>
+        <p>Mock checkout flow for the Swiftly parking marketplace.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="listings.html">Listings</a>
+        <a href="locations.html">Locations</a>
+        <a href="booking.html">Booking Flow</a>
+      </div>
+      <div>
+        <h3>Need help?</h3>
+        <a href="safety.html">Safety &amp; Trust</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
