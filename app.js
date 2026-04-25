@@ -9,6 +9,7 @@ const parkingListings = [
     availability: "Available now",
     description: "Reserved covered stall near hotels, shopping, and beach access.",
     host: "Hosted by Mia L.",
+    address: "2240 Kūhiō Ave. # 104, Honolulu, HI 96815",
     image: "parking%20picture/coverded%20condo%20parking%20in%20waikiki.jpg"
   },
   {
@@ -20,6 +21,7 @@ const parkingListings = [
     availability: "Available now",
     description: "Gated parking stall with easy walk access to Ala Moana shopping and nearby offices.",
     host: "Hosted by Kaimana Retail",
+    address: "1350 Ala Moana Blvd, Honolulu, HI 96814",
     image: "parking%20picture/secure%20stall%20near%20ala%20moana%20center.jpg"
   },
   {
@@ -31,6 +33,7 @@ const parkingListings = [
     availability: "Weekday access",
     description: "Reliable monthly stall for students, staff, or commuters who need predictable parking.",
     host: "Hosted by Leilani P.",
+    address: "2007 Hunnewell St, Honolulu, HI 96822",
     image: "parking%20picture/parking%20near%20uh%20manoa.jpg"
   },
   {
@@ -42,6 +45,7 @@ const parkingListings = [
     availability: "Limited",
     description: "Covered daytime parking close to office towers, courts, and government buildings.",
     host: "Hosted by Harbor Plaza",
+    address: "201 Merchant St # 1930, Honolulu, HI 96813",
     image: "parking%20picture/dwontown%20cover%20parking.jpg"
   },
   {
@@ -53,6 +57,7 @@ const parkingListings = [
     availability: "Available now",
     description: "Simple all-day parking near restaurants, art walls, cafes, and the waterfront.",
     host: "Hosted by Hana T.",
+    address: "810 Pohukaina St Suite 2A, Honolulu, HI 96813",
     image: "parking%20picture/open%20air%20stall%20in%20kakaako.jpg"
   },
   {
@@ -64,6 +69,7 @@ const parkingListings = [
     availability: "Weekday access",
     description: "Great for dinner, nightlife, and evening beach visits with a reserved private stall.",
     host: "Hosted by Royal Sunset Suites",
+    address: "2500 Kalākaua Ave, Honolulu, HI 96815",
     image: "parking%20picture/evening%20parking%20near%20waikiki%20strip.jpg"
   }
 ];
@@ -156,6 +162,7 @@ function createListingCard(listing) {
       <div>
         <p class="mini-label">${listing.area}</p>
         <h3>${listing.title}</h3>
+        <p class="listing-address">${listing.address}</p>
       </div>
       <span class="listing-badge">${listing.availability}</span>
     </div>
@@ -289,6 +296,7 @@ function setupCheckout() {
   const image = page.querySelector("[data-checkout-image]");
   const title = page.querySelector("[data-checkout-title]");
   const area = page.querySelector("[data-checkout-area]");
+  const address = page.querySelector("[data-checkout-address]");
   const host = page.querySelector("[data-checkout-host]");
   const type = page.querySelector("[data-checkout-type]");
   const rate = page.querySelector("[data-checkout-rate]");
@@ -324,6 +332,7 @@ function setupCheckout() {
   }
   if (title) title.textContent = listing.title;
   if (area) area.textContent = listing.area;
+  if (address) address.textContent = listing.address;
   if (host) host.textContent = listing.host;
   if (note) note.textContent = "This is a simulated checkout page.";
 
@@ -376,6 +385,7 @@ function setupBookingSuccess() {
   const emailField = page.querySelector("[data-booking-success-email]");
   const titleField = page.querySelector("[data-booking-success-title]");
   const areaField = page.querySelector("[data-booking-success-area]");
+  const addressField = page.querySelector("[data-booking-success-address]");
   const hostField = page.querySelector("[data-booking-success-host]");
   const quantityField = page.querySelector("[data-booking-success-quantity]");
   const totalField = page.querySelector("[data-booking-success-total]");
@@ -383,6 +393,7 @@ function setupBookingSuccess() {
   if (emailField) emailField.textContent = email;
   if (titleField) titleField.textContent = listing.title;
   if (areaField) areaField.textContent = listing.area;
+  if (addressField) addressField.textContent = listing.address;
   if (hostField) hostField.textContent = listing.host;
   if (quantityField) quantityField.textContent = summary.quantityLabel;
   if (totalField) totalField.textContent = summary.total;
@@ -413,5 +424,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderListings(parkingListings.slice(0, 3), "home");
   renderListings(parkingListings, "listings");
 });
+
+
+
+
+
 
 
